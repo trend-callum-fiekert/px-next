@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Tabs, TabsList, TabsTrigger } from "@/app/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/app/components/shadcn-ui/tabs";
 import { cn } from "@/app/lib/utils";
 
 // Define the type for context menu items

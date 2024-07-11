@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/styles/globals.css";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import Header from "@/app/components/header/index";
 import { ContextMenu } from "./components/ContextMenu";
+import { Footer } from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +19,8 @@ interface RootLayoutProps {
   children: React.ReactNode;
   contextMenuItems?: Array<{ label: string; href: string }>;
 }
+
+const authRole = "admin" || "trender";
 
 const navItems = [
   { href: "/catalog", label: "Catalog" },

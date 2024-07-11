@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Input } from "@/app/components/ui/input";
-import { Button } from "@/app/components/ui/button";
-import { Switch } from "@/app/components/ui/switch";
+import { Input } from "@/app/components/shadcn-ui/input";
+import { Button } from "@/app/components/shadcn-ui/button";
+import { Switch } from "@/app/components/shadcn-ui/switch";
 import {
   Table,
   TableBody,
@@ -10,14 +10,14 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/app/components/ui/table";
+} from "@/app/components/shadcn-ui/table";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/app/components/ui/select";
+} from "@/app/components/shadcn-ui/select";
 
 // Define the structure for an invitation
 interface Invitation {

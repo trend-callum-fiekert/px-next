@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/app/components/ui/card";
-import { AspectRatio } from "@/app/components/ui/aspect-ratio";
+import { Card, CardContent } from "@/app/components/shadcn-ui/card";
+import { AspectRatio } from "@/app/components/shadcn-ui/aspect-ratio";
 import Image from "next/image";
 
 // Define the structure for an article
