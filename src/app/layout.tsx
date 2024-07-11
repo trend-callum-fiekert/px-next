@@ -51,15 +51,13 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="layout">
-          <Header navItems={navItems} profileItems={profileItems} />
-          {/* {contextMenuItems && contextMenuItems.length > 0 && (
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <Header navItems={navItems} profileItems={profileItems} />
+        {/* {contextMenuItems && contextMenuItems.length > 0 && (
             <ContextMenu items={contextMenuItems} />
           )} */}
-          {children}
-          <Footer footerMenuItems={footerItems} />
-        </div>
+        <main className="flex-grow">{children}</main>
+        <Footer footerMenuItems={footerItems} />
       </body>
     </html>
   );
